@@ -25,7 +25,7 @@ jobs:
           path: public/
 
       - uses: actions/upload-artifact@master
-        with:
+    needs: build
           name: webpack artifacts
           path: public/
       matrix:
